@@ -15,13 +15,16 @@ using namespace std;
 /*
  * 
  */
-int main(int argc, char** argv) {
-    int day;
-
+int main() {    
     CDateDiff date1;
-    day = date1.getD();
-    cout << day << endl;
+    CDateDiff date2;
+    
+    date1.setDate("12/9/2012");
+    date2.setDate(12,10,2012);
+    
+    cout << "Между датами прошло " << date1.totalDays() << date2.totalDays() << " дней" << endl;
     return 0;
     
 }
 
+////
